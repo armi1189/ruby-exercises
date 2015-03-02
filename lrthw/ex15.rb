@@ -10,6 +10,9 @@ puts "Here's your file #{filename}: "
 # Print out the txt variable with the command read to read the file related
 print txt.read
 
+# Close the file
+puts txt.close
+
 # Print a string that asks for the filename again
 print "Type the filename again: "
 
@@ -21,3 +24,6 @@ txt_again = open(file_again)
 
 # Print out the txt_again with the command reat to read the file related
 print txt_again.read
+
+# Close the file
+puts txt_again.close
