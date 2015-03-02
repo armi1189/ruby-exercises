@@ -1,12 +1,12 @@
-user_name = ARGV.first
-prompt = '> '
+title, user_name = ARGV
+prompt = 'answer me! => '
 
-puts "Hi #{user_name}."
+puts "Hi #{title} #{user_name}."
 puts "I'd like to ask you a few questions."
-puts "Do you like me #{user_name}? ", prompt
+puts "Do you like me #{title} #{user_name}? ", prompt
 likes = $stdin.gets.chomp
 
-puts "Where do you live #{user_name}? ", prompt
+puts "Where do you live #{title} #{user_name}? ", prompt
 lives = $stdin.gets.chomp
 
 puts "What kind of computer do you have? ", prompt
