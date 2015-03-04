@@ -7,6 +7,7 @@ if door == "1"
   puts "There's a giant bear here eating a cheese cake. What do you do?"
   puts "1. Take the cake."
   puts "2. Scream at the bear."
+  puts "3. Run away"
 
   print "> "
   bear = $stdin.gets.chomp
@@ -15,6 +16,23 @@ if door == "1"
     puts "The bear eats your face off. Good job!"
   elsif bear == "2"
     puts "The bear eats your legs off. Good job!"
+  elsif bear == "3"
+    puts "You start to run backwards \'till the road splits in two. Decide quickly because the bear is chasing you"
+    puts "1. Right road"
+    puts "2. Left road"
+    puts "3. Wait for the bear"
+
+    print "> "
+    road = $stdin.gets.chomp
+
+      if road == "1" || road == "2"
+        puts "The more you walk through the road, the more is getting darker.... You die."
+      elsif road == "3"
+        puts "Bear reaches you and starts to hug you \'till you explode."
+      else
+        puts "%s was the best choiche! Bear is your friend now" %road
+      end
+
   else
     puts "Well, doing %s is probably better. Bear runs away." %bear
   end
